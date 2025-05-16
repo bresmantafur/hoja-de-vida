@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Hoja de Vida - Alfonso Tafur</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: 'Inter', sans-serif;
+      background: #f4f7fa;
+      color: #2c3e50;
+      padding: 40px 20px;
+      display: flex;
+      justify-content: center;
+    }
+
+    .cv-container {
+      display: grid;
+      grid-template-columns: 280px 1fr;
+      background: #ffffff;
+      border-radius: 16px;
+      overflow: hidden;
+      max-width: 1000px;
+      width: 100%;
+      box-shadow: 0 6px 24px rgba(0,0,0,0.1);
+    }
+
+    .sidebar {
+      background-color: #2c3e50;
+      color: white;
+      padding: 30px 20px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+    }
+
+    .sidebar img {
+      width: 160px;
+      height: 160px;
+      border-radius: 50%;
+      object-fit: cover;
+      margin-bottom: 20px;
+      border: 5px solid #3498db;
+      box-shadow: 0 0 10px rgba(0,0,0,0.3);
+    }
+
+    .sidebar h1 {
+      font-size: 1.4rem;
+      margin-bottom: 10px;
+    }
+
+    .sidebar .contacto a {
+      display: block;
+      color: #ecf0f1;
+      text-decoration: none;
+      margin: 5px 0;
+      font-size: 0.9rem;
+      word-break: break-word;
+    }
+
+    .main-content {
+      padding: 30px;
+    }
+
+    section {
+      margin-bottom: 30px;
+    }
+
+    h2 {
+      font-size: 1.3rem;
+      color: #2980b9;
+      margin-bottom: 12px;
+      border-bottom: 2px solid #ecf0f1;
+      padding-bottom: 6px;
+    }
+
+    p, li {
+      line-height: 1.6;
+      font-size: 1rem;
+      color: #2c3e50;
+    }
+
+    ul {
+      list-style-type: disc;
+      padding-left: 20px;
+    }
+
+    .tag {
+      background: #ecf0f1;
+      border-radius: 20px;
+      display: inline-block;
+      padding: 6px 12px;
+      margin: 5px 5px 0 0;
+      font-size: 0.85rem;
+    }
+
+    @media screen and (max-width: 768px) {
+      .cv-container {
+        grid-template-columns: 1fr;
+      }
+
+      .sidebar {
+        flex-direction: column;
+        align-items: center;
+        padding: 20px;
+      }
+
+      .sidebar img {
+        width: 120px;
+        height: 120px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="cv-container">
+    <aside class="sidebar">
+      <img src="https://i.imgur.com/dxVuIcH.jpg" alt="Foto de Alfonso Tafur" />
+      <h1>Alfonso Tafur</h1>
+      <div class="contacto">
+        📧 <a href="mailto:alfonsotafur410@gmail.com">alfonsotafur410@gmail.com</a>
+        📱 <a href="https://wa.me/573144793582" target="_blank">WhatsApp</a>
+        💼 <a href="https://www.linkedin.com/in/alfonso-tafur-4b579a25a" target="_blank">LinkedIn</a>
+      </div>
+    </aside>
+
+    <main class="main-content">
+      <section>
+        <h2>Perfil Profesional</h2>
+        <p>
+          Estudiante de Análisis y Desarrollo de Software con vocación por la atención al cliente y el servicio. Experiencia laboral como mesero en el restaurante Portal Gourmet desde 2024, con más de un año y medio en atención al público. Responsable, empático y con capacidad de adaptación a distintos entornos. Cuento con certificados en primeros auxilios, celaduría, atención al cliente y tecnologías actuales como inteligencia artificial generativa.
+        </p>
+      </section>
+
+      <section>
+        <h2>Experiencia Laboral</h2>
+        <ul>
+          <li><strong>Mesero - Restaurante Portal Gourmet</strong> (2024 - Actualidad)<br />
+            Atención directa al cliente, manejo de pedidos, resolución de inquietudes y apoyo en eventos especiales.
+          </li>
+          <li><strong>Atención al Cliente – Experiencia general</strong> (2022 - 2023)<br />
+            Servicio presencial, gestión de quejas y soporte básico en diversos entornos.
+          </li>
+        </ul>
+      </section>
+
+      <section>
+        <h2>Formación Académica</h2>
+        <ul>
+          <li><strong>Tecnólogo en Análisis y Desarrollo de Software</strong> - SENA (En curso)</li>
+          <li><strong>Bachiller Académico</strong> - Colegio Jorge Isaacs, Villavicencio, Meta (Culminado)</li>
+          <li><strong>Primaria</strong> - Instituto Técnico Industrial de Tibasosa, Boyacá</li>
+        </ul>
+      </section>
+
+      <section>
+        <h2>Certificaciones</h2>
+        <ul>
+          <li>Fundamentos en Vigilancia</li>
+          <li>Atención al Cliente</li>
+          <li>Primeros Auxilios</li>
+          <li><strong>Cómo resolver problemas y tomar decisiones con eficacia</strong> - University of California, Irvine</li>
+          <li><strong>Generative AI: Prompt Engineering Basics</strong> - IBM</li>
+        </ul>
+      </section>
+
+      <section>
+        <h2>Habilidades</h2>
+        <div>
+          <span class="tag">Atención al Cliente</span>
+          <span class="tag">Trabajo en Equipo</span>
+          <span class="tag">Responsabilidad</span>
+          <span class="tag">Comunicación Asertiva</span>
+          <span class="tag">HTML</span>
+          <span class="tag">CSS</span>
+          <span class="tag">Lógica de Programación</span>
+          <span class="tag">Resolución de Problemas</span>
+        </div>
+      </section>
+
+      <section>
+        <h2>Idiomas</h2>
+        <p>Español (Nativo)</p>
+        <p>Ingles (Basico)</p>
+      </section>
+    </main>
+  </div>
+
+</body>
+</html>
