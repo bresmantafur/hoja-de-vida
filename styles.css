@@ -1,0 +1,105 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: 'Inter', sans-serif;
+      background: #f4f7fa;
+      color: #2c3e50;
+      padding: 40px 20px;
+      display: flex;
+      justify-content: center;
+    }
+
+    .cv-container {
+      display: grid;
+      grid-template-columns: 280px 1fr;
+      background: #ffffff;
+      border-radius: 16px;
+      overflow: hidden;
+      max-width: 1000px;
+      width: 100%;
+      box-shadow: 0 6px 24px rgba(0, 0, 0, 0.1);
+    }
+
+    .sidebar {
+      background-color: #2c3e50;
+      color: white;
+      padding: 30px 20px;
+      text-align: center;
+    }
+
+    .sidebar img {
+      width: 160px;
+      height: 160px;
+      border-radius: 50%;
+      object-fit: cover;
+      margin-bottom: 20px;
+      border: 5px solid #3498db;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    }
+
+    .sidebar h1 {
+      font-size: 1.4rem;
+      margin-bottom: 10px;
+    }
+
+    .sidebar .contacto a {
+      display: block;
+      color: #ecf0f1;
+      text-decoration: none;
+      margin: 6px 0;
+      font-size: 0.9rem;
+      word-break: break-word;
+    }
+
+    .main-content {
+      padding: 30px;
+    }
+
+    section {
+      margin-bottom: 30px;
+    }
+
+    h2 {
+      font-size: 1.3rem;
+      color: #2980b9;
+      margin-bottom: 12px;
+      border-bottom: 2px solid #ecf0f1;
+      padding-bottom: 6px;
+    }
+
+    p, li {
+      line-height: 1.6;
+      font-size: 1rem;
+      color: #2c3e50;
+    }
+
+    ul {
+      list-style-type: disc;
+      padding-left: 20px;
+    }
+
+    .tag {
+      background: #ecf0f1;
+      border-radius: 20px;
+      display: inline-block;
+      padding: 6px 12px;
+      margin: 5px 5px 0 0;
+      font-size: 0.85rem;
+    }
+
+    @media screen and (max-width: 768px) {
+      .cv-container {
+        grid-template-columns: 1fr;
+      }
+
+      .sidebar img {
+        width: 120px;
+        height: 120px;
+      }
+    }
