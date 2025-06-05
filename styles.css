@@ -48,6 +48,11 @@
       margin-bottom: 10px;
     }
 
+    .sidebar p {
+      font-size: 1.4rem;
+      margin-bottom: 10px;
+    }
+
     .sidebar .contacto a {
       display: block;
       color: #ecf0f1;
